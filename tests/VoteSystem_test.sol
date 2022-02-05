@@ -23,10 +23,10 @@ contract VoteSystemTest {
     /// 'beforeAll' runs before all other tests
     /// More special functions are: 'beforeEach', 'beforeAll', 'afterEach' & 'afterAll'
 
-    /// #value: 10000000000000000
+    /// #value: 100000000000000000
     function beforeAll() public payable {
         // <instantiate contract>
-        voteSystemToTest = new VoteSystem{value: 0.01 ether}(startTime, endTime, proposalNames);
+        voteSystemToTest = new VoteSystem{value: 0.1 ether}(startTime, endTime, proposalNames);
     }
 
     function checkWinningProposal() public {
